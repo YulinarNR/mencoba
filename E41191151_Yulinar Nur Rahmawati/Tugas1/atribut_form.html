@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Atribut</title>
+</head>
+<body>
+
+<!-- 1. Atribut value 
+	Nilai awal yang akan ditampilkan saat menjalankannya di browser -->
+	<form>
+		Nama Depan :<input type="text" value="nama"><br/>
+		Nama Belakang : <input type="text">
+	</form>
+	<hr>
+
+<!-- 2. Atribut Readonlu, hanya bisa dibaca dan tidak bisa diubah -->
+	<form>
+		Nama Depan :<input type="text" value="nama" readonly><br/>
+		Nama Belakang : <input type="text">
+	</form> <hr>
+
+<!-- 3. Atribut Disables, menonaktikan inputan dengan elemen yang tidak dapat diubah -->
+	<form>
+		Nama Depan :<input type="text" value="nama" disabled><br/>
+		Nama Belakang : <input type="text">
+	</form> <hr>
+
+<!-- 4. Atribut Size, mengatur lebar kotak inputan-->
+	<form>
+		Nama Depan :<input type="text" value="nama" size="50"><br/>
+		Nama Belakang : <input type="text">
+	</form> <hr>
+
+<!-- 5. Atribut Maxlength, menentukan jumlah inputan teks yang dibatasi-->
+	<form>
+		Nama Depan :<input type="text" value="nama" maxlength="10"><br/>
+		Nama Belakang : <input type="text">
+	</form> <hr>
+
+<!-- 6. Atribut List, menampilkan list pada form inputan-->
+	<form>
+		<input list="browser" name="internet">
+			<datalist id="browser">
+				<option value="chrome">
+				<option value="mozilla">
+				<option value="opera">
+			</datalist>
+	</form><hr>
+
+<!-- 7. Atribut Min dan max, menentukan nilai minimum dan maximum untuk elemen <input> -->
+	<form>
+		<input type="date" name="day" max="1979-12-31">
+		<input type="date" name="day" min="2000-01-02">
+	</form><hr>
+
+<!-- 8. Atribut Placeholder, pengganti dari label field -->
+	<form>
+		<input type="text" name="nama" placeholder="masukkan nama">
+	</form>
+</body>
+</html>
